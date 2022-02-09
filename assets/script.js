@@ -24,18 +24,18 @@ let subractCcButton = document.querySelector('#minus-cc')
 let ccQuantityDisplay = document.querySelector('#qty-cc')
 
 // Sugar Sprinkle Elements
-let plusSugarbutton = document.querySelector('#add-sugar')
+let plusSugarButton = document.querySelector('#add-sugar')
 let subtractSugarButton = document.querySelector('#minus-sugar')
 let sugarQuantityDisplay = document.querySelector('#qty-sugar')
 
 // Quantity Total
-let quanitiyTotalDisplay = document.querySelector('#qty-total')
+let quantityTotalDisplay = document.querySelector('#qty-total')
 
 // Quantity Changing Functions
 function addGbQuantity() {
     gb++
     gbQuantityDisplay.textContent = gb
-    quanitiyTotalDisplay.textContent = sumQuantities()
+    quantityTotalDisplay.textContent = sumQuantities()
 }
 
 function minusGbQuantity() {
@@ -44,13 +44,13 @@ function minusGbQuantity() {
     }
     gb--
     gbQuantityDisplay.textContent = gb
-    quanitiyTotalDisplay.textContent = sumQuantities()
+    quantityTotalDisplay.textContent = sumQuantities()
 }
 
 function addCcQuantity() {
     cc++
     ccQuantityDisplay.textContent = cc
-    quanitiyTotalDisplay.textContent = sumQuantities()
+    quantityTotalDisplay.textContent = sumQuantities()
 }
 
 function minusCcQuantity() {
@@ -59,13 +59,13 @@ function minusCcQuantity() {
     }
     cc--
     ccQuantityDisplay.textContent = cc
-    quanitiyTotalDisplay.textContent = sumQuantities()
+    quantityTotalDisplay.textContent = sumQuantities()
 }
 
 function addSugarQuantity() {
     sugar++
     sugarQuantityDisplay.textContent = sugar
-    quanitiyTotalDisplay.textContent = sumQuantities()
+    quantityTotalDisplay.textContent = sumQuantities()
 }
 
 function minusSugarQuantity() {
@@ -74,7 +74,7 @@ function minusSugarQuantity() {
     }
     sugar--
     sugarQuantityDisplay.textContent = sugar
-    quanitiyTotalDisplay.textContent = sumQuantities()
+    quantityTotalDisplay.textContent = sumQuantities()
 }
 
 // Add Event Listeners
@@ -82,5 +82,5 @@ plusGbButton.addEventListener('click', addGbQuantity)
 subtractGbButon.addEventListener('click', minusGbQuantity)
 plusCcButton.addEventListener('click', addCcQuantity)
 subractCcButton.addEventListener('click', minusCcQuantity)
-plusSugarbutton.addEventListener('click', addSugarQuantity)
+plusSugarButton.addEventListener('click', addSugarQuantity)
 subtractSugarButton.addEventListener('click', minusSugarQuantity)
